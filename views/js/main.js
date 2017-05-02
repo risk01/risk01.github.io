@@ -499,10 +499,11 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.getELementsByClassName('mover');
+  var cachedLength = items.length;
+  var items = document.getElementsByClassName('mover');
   var top = document.body.scrollTop/ 1250;
 
-  for (var i = 0, cachedLength = items.length; i < cachedLength; i++) {
+  for (var i = 0; i < cachedLength; i++) {
     var phase = Math.sin((top) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
