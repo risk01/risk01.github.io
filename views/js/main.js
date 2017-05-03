@@ -499,8 +499,9 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var cachedLength = items.length;
+  
   var items = document.getElementsByClassName('mover');
+  var cachedLength = items.length;
   var top = (document.body.scrollTop / 1250);
 
   for (var i = 0; i < cachedLength; i++) {
@@ -529,7 +530,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var movingZa = document.querySelector("#movingPizzas1");
-  
+
   for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
