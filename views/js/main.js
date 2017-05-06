@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //removed moveZa from loop and changed to getElementById
     var moveZa = document.getElementById("movingPizzas1");
 
-    //changed the amount of pizzas to a more reasonable number
+    //changed the amount of pizzas to a more reasonable number. *reviewer suggested multiples of 8.
     for (var i = 0; i < 32; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
