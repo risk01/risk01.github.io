@@ -15,7 +15,6 @@ Cameron's profile linking to a couple courses and projects.
 ## Grunt Files included
 * gruntfile.js
 * package.json
-* node_modules
 
 ## How to open
 Open index.html in a browser to load profile.  You are able to click links to open courses or projects done. 
